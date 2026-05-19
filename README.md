@@ -147,7 +147,7 @@ Plotting **V vs V/[S]** gives a straight line where:
 
 > 📷 *Add your Eadie-Hofstee plot screenshot to a `/screenshots` folder and update the path below*
 
-![Eadie-Hofstee Plot](ehp.png)
+![Eadie-Hofstee Plot](Ehp.png)
 
 ---
 
