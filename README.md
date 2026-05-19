@@ -92,7 +92,7 @@ The curve never begins to flatten toward Vmax within the experimental range — 
 
 >  *Add your MM plot screenshot to a `/screenshots` folder and update the path below*
 
-![Michaelis-Menten Plot](screenshots/michaelis_menten.png)
+![Michaelis-Menten Plot](mm.png)
 
 ---
 
@@ -124,7 +124,7 @@ This allows Km and Vmax to be determined graphically even when saturation is nev
 
 > *Add your Lineweaver-Burk plot screenshot to a `/screenshots` folder and update the path below*
 
-![Lineweaver-Burk Plot](screenshots/lineweaver_burk.png)
+![Lineweaver-Burk Plot](lb.png)
 
 ---
 
@@ -147,7 +147,7 @@ Plotting **V vs V/[S]** gives a straight line where:
 
 > 📷 *Add your Eadie-Hofstee plot screenshot to a `/screenshots` folder and update the path below*
 
-![Eadie-Hofstee Plot](screenshots/eadie_hofstee.png)
+![Eadie-Hofstee Plot](ehp.png)
 
 ---
 
