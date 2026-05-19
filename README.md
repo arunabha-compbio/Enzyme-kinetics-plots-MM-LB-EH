@@ -90,7 +90,6 @@ The curve never begins to flatten toward Vmax within the experimental range — 
 
 ### MM Plot Output
 
->  *Add your MM plot screenshot to a `/screenshots` folder and update the path below*
 
 ![Michaelis-Menten Plot](mm.png)
 
@@ -122,7 +121,6 @@ This allows Km and Vmax to be determined graphically even when saturation is nev
 
 ### Lineweaver-Burk Plot Output
 
-> *Add your Lineweaver-Burk plot screenshot to a `/screenshots` folder and update the path below*
 
 ![Lineweaver-Burk Plot](lb.png)
 
@@ -145,7 +143,6 @@ Plotting **V vs V/[S]** gives a straight line where:
 
 ### Eadie-Hofstee Plot Output
 
-> 📷 *Add your Eadie-Hofstee plot screenshot to a `/screenshots` folder and update the path below*
 
 ![Eadie-Hofstee Plot](Ehp.png)
 
@@ -190,10 +187,10 @@ Only `ggplot2` is required. All other functions (`lm`, `coef`, `seq`) are from b
 1. Clone or download this repository
 2. Open `Enzymekinetics_MM_lineweaverburq_eadiehofstee.R` in **RStudio**
 3. Update the reaction time at the top of the script:
-## 📂 Source Code
+## Source Code
 
 The complete analysis script can be found here:
-👉 [Enzymekinetics_MM_lineweaverburq_eadiehofstee.R](Enzymekinetics_MM_lineweaverburq_eadiehofstee.R)
+ [Enzymekinetics_MM_lineweaverburq_eadiehofstee.R](Enzymekinetics_MM_lineweaverburq_eadiehofstee.R)
 
 ```r
 reaction_time <- 30   # Replace with your actual assay incubation time in minutes
@@ -205,7 +202,7 @@ reaction_time <- 30   # Replace with your actual assay incubation time in minute
 
 ---
 
-## Author Notes
+## Notes
 
 - ε = 18,800 M⁻¹cm⁻¹ is the accepted standard molar extinction coefficient for pNP at 405 nm
 - The MM curve is **theoretical** — drawn using LB-derived parameters — and is included for visualization and conceptual understanding only
@@ -218,3 +215,8 @@ reaction_time <- 30   # Replace with your actual assay incubation time in minute
 
 MIT License — free to use and modify for academic and research purposes.
 
+## Author
+ 
+**Arunabha Pal**
+BSc Microbiology
+_St. Xavier's College (Autonomous) Kolkata_
