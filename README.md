@@ -190,6 +190,10 @@ Only `ggplot2` is required. All other functions (`lm`, `coef`, `seq`) are from b
 1. Clone or download this repository
 2. Open `Enzymekinetics_MM_lineweaverburq_eadiehofstee.R` in **RStudio**
 3. Update the reaction time at the top of the script:
+## 📂 Source Code
+
+The complete analysis script can be found here:
+👉 [Enzymekinetics_MM_lineweaverburq_eadiehofstee.R](Enzymekinetics_MM_lineweaverburq_eadiehofstee.R)
 
 ```r
 reaction_time <- 30   # Replace with your actual assay incubation time in minutes
