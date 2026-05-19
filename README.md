@@ -1,10 +1,10 @@
-# 🧪 Enzyme Kinetics Analysis — Alkaline Phosphatase (pNPP)
+# Enzyme Kinetics Analysis — Alkaline Phosphatase (pNPP)
 
 > R-based visualization pipeline for enzyme kinetics data using three classical methods: Michaelis-Menten, Lineweaver-Burk, and Eadie-Hofstee.
 
 ---
 
-## 📁 Repository File
+## Repository File
 
 ```
 enzyme-kinetics/
@@ -15,13 +15,13 @@ enzyme-kinetics/
 
 ---
 
-## 📋 Overview
+## Overview
 
 This repository contains an R script to analyze and visualize the kinetics of **Alkaline Phosphatase** using **p-nitrophenyl phosphate (pNPP)** as substrate, detected spectrophotometrically at **405 nm** where the product p-nitrophenol (pNP) absorbs. Raw absorbance (OD) values are converted to velocity in **mM/min** using the Beer-Lambert Law, and three complementary kinetic plots are generated and discussed.
 
 ---
 
-## 🔬 Experimental Setup
+## Experimental Setup
 
 | Parameter | Value |
 |-----------|-------|
@@ -34,7 +34,7 @@ This repository contains an R script to analyze and visualize the kinetics of **
 
 ---
 
-## 📊 Raw Data
+## Raw Data
 
 ### Substrate Concentration vs Absorbance
 
@@ -58,7 +58,7 @@ This repository contains an R script to analyze and visualize the kinetics of **
 
 ---
 
-## ⚙️ Beer-Lambert Conversion
+## Beer-Lambert Conversion
 
 Raw OD values are converted to reaction velocity using:
 
@@ -74,7 +74,7 @@ For the double-reciprocal transformation:
 
 ---
 
-## 📈 Plot 1 — Michaelis-Menten Curve
+## Plot 1 — Michaelis-Menten Curve
 
 The Michaelis-Menten equation describes the hyperbolic relationship between substrate concentration and reaction velocity:
 
@@ -82,7 +82,7 @@ The Michaelis-Menten equation describes the hyperbolic relationship between subs
 V = (Vmax × [S]) / (Km + [S])
 ```
 
-### ⚠️ Why the MM Curve Alone is Insufficient
+### Why the MM Curve Alone is Insufficient
 
 While the Michaelis-Menten plot provides an intuitive visualization of enzyme saturation kinetics, it **cannot be reliably used to manually determine Km** in this experiment. This is because all experimental substrate concentrations tested (0.2–1.0 mM) fall **below the derived Km of 1.3144 mM**, meaning the enzyme was operating entirely in the sub-saturating, first-order kinetic regime throughout the assay.
 
@@ -90,13 +90,13 @@ The curve never begins to flatten toward Vmax within the experimental range — 
 
 ### MM Plot Output
 
-> 📷 *Add your MM plot screenshot to a `/screenshots` folder and update the path below*
+>  *Add your MM plot screenshot to a `/screenshots` folder and update the path below*
 
 ![Michaelis-Menten Plot](screenshots/michaelis_menten.png)
 
 ---
 
-## 📈 Plot 2 — Lineweaver-Burk Plot
+## Plot 2 — Lineweaver-Burk Plot
 
 The Lineweaver-Burk (double-reciprocal) plot linearizes the Michaelis-Menten equation:
 
@@ -122,13 +122,13 @@ This allows Km and Vmax to be determined graphically even when saturation is nev
 
 ### Lineweaver-Burk Plot Output
 
-> 📷 *Add your Lineweaver-Burk plot screenshot to a `/screenshots` folder and update the path below*
+> *Add your Lineweaver-Burk plot screenshot to a `/screenshots` folder and update the path below*
 
 ![Lineweaver-Burk Plot](screenshots/lineweaver_burk.png)
 
 ---
 
-## 📈 Plot 3 — Eadie-Hofstee Plot
+## Plot 3 — Eadie-Hofstee Plot
 
 The Eadie-Hofstee plot rearranges the Michaelis-Menten equation as:
 
@@ -151,7 +151,7 @@ Plotting **V vs V/[S]** gives a straight line where:
 
 ---
 
-## 📐 Kinetic Parameters Summary
+## Kinetic Parameters Summary
 
 | Method | Km (mM) | Vmax (mM/min) | R² |
 |--------|---------|----------------|-----|
@@ -161,7 +161,7 @@ Plotting **V vs V/[S]** gives a straight line where:
 
 ---
 
-## ❓ Why Does Km Vary Across the Three Methods?
+## Why Does Km Vary Across the Three Methods?
 
 All three plots use the same raw dataset but transform it mathematically in different ways before fitting a regression line. This changes which data points carry the most statistical weight in the final parameter estimates.
 
@@ -175,7 +175,7 @@ The variation in Km is therefore not a flaw — it is a well-documented conseque
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ```r
 install.packages("ggplot2")
@@ -185,7 +185,7 @@ Only `ggplot2` is required. All other functions (`lm`, `coef`, `seq`) are from b
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
 1. Clone or download this repository
 2. Open `Enzymekinetics_MM_lineweaverburq_eadiehofstee.R` in **RStudio**
@@ -201,7 +201,7 @@ reaction_time <- 30   # Replace with your actual assay incubation time in minute
 
 ---
 
-## 👨‍🔬 Author Notes
+## Author Notes
 
 - ε = 18,800 M⁻¹cm⁻¹ is the accepted standard molar extinction coefficient for pNP at 405 nm
 - The MM curve is **theoretical** — drawn using LB-derived parameters — and is included for visualization and conceptual understanding only
@@ -210,6 +210,7 @@ reaction_time <- 30   # Replace with your actual assay incubation time in minute
 
 ---
 
-## 📄 License
+## License
 
 MIT License — free to use and modify for academic and research purposes.
+
